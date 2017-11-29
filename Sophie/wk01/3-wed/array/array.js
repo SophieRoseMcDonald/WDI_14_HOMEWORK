@@ -9,5 +9,5 @@ var newDaysOfTheWeek = [
   ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
   ['Saturday', 'Sunday']
 ];
-newDaysOfTheWeek.splice([1]);
+newDaysOfTheWeek.pop();
 console.log(newDaysOfTheWeek);
