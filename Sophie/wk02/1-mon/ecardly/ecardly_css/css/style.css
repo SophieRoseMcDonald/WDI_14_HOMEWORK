@@ -15,6 +15,7 @@
   background-color: white;
   width: 60%;
   float: left;
+  padding: 20px;
 }
 .main img {
   width: 100%;
@@ -22,16 +23,21 @@
 .sidecolumn {
   background-color: white;
   float: right;
-  width: 30%;
+  width: 25%;
+  padding-left: 10px;
   margin-right: 50px;
-  padding-left: 20px;
+  padding-bottom: 30px;
 
 }
 
-footer {
-  float: left;
-  clear: right;
+#socialmedia {
+  
 }
 body {
   background-color: LightGrey;
+}
+
+.list ul {
+  list-style: none;
+  padding-left: 10px;
 }
