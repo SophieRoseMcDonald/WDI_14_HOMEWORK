@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  color: red;
+  font-family: sans-serif;
+  font-weight: lighter;
+  display: inline-block;
+  font-size: 45px;
+}
+
+header h2 {
+  color: grey;
+  font-family: sans-serif;
+  font-weight: lighter;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#mainnav ul {
+  padding: 0;
+}
+
+#mainnav li {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  width: 16%;
+  padding: 20px;
+}
+
+main {
+  display: inline-block;
+  background-color: white;
+  width: 60%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.date {
+  color: DarkGrey;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+aside {
+  display: inline-block;
+  background-color: white;
+  width: 35%;
+  vertical-align: top;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+aside ul {
+  display: inline;
+  padding-left: 10px;
+}
+
+article {
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+article img {
+  width: 100%;
+}
+
+article footer {
+  display: inline-block;
+  width: 100%;
+  padding-left: 70%;
+  color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.ad {
+  padding: 5px;
+}
+
+.ad img {
+  width: 100%;
+}
+
+#otherposts {
+  list-style-type: disc;
+  color: red;
+  border: 0;
+}
+
+h3 {
+  color: grey;
+}
+
+p {
+  color: grey;
+}
+
+.blog::first-letter {
+  font-size: 300%;
+}
+
+#mininav ul {
+  padding: 0;
+}
+
+#mininav li {
+  display: inline-block;
+  background-color: white;
+  color: red;
+  border-right: 1px solid black;
+  font-size: 10px;
+  width: 10%
+}
+
+footer p {
+  color: red;
+}
+
+#copyright {
+  color: grey;
+}
