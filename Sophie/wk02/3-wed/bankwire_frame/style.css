@@ -1,0 +1,74 @@
+.container {
+  padding: 50px;
+}
+header {
+  align-items: center;
+}
+header img {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 15%
+
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#logo {
+  background-color: red;
+}
+
+#savingscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 40%;
+  text-align: center;
+  background-color: red;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+#checking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 40%;
+  text-align: center;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 20px;
+  /*display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  background-color: yellow;
+  border: 1px solid black;*/
+}
+
+h3 {
+  display: inline-block;
+  /*align-self: center;
+  align-content: space-around;*/
+  /*justify-content: center;*/
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: LightBlue;
+}
+
+input {
+  background-color: LightBlue;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
