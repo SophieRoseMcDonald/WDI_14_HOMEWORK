@@ -28,7 +28,7 @@ header h1 {
   flex-wrap: nowrap;
   width: 40%;
   text-align: center;
-  background-color: red;
+  background-color: LightBlue;
   border: 1px solid black;
   margin: 0 auto;
 }
@@ -65,10 +65,22 @@ h3 {
 }
 
 input {
-  background-color: LightBlue;
+  background-color: white;
 }
 
 button {
   padding: 10px;
   margin: 10px;
+}
+
+#checkingcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 40%;
+  text-align: center;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 0 auto;
 }

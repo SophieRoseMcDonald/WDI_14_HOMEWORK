@@ -5,46 +5,72 @@ var balance = document.querySelector('span.balance');
 var savings = document.querySelector('input.savings')
 var withdrawbtn = document.querySelector('#withdrawbtn')
 var depositbtn = document.querySelector('#depositbtn')
-
+var savaccount = document.querySelector('#savingscontainer')
+// var result = 0;
 
 function deposit() {
-  var add = Number(savings.value) + Number(balance.textContent)
-  balance.textContent = add
+  var add = Number(savings.value) + Number(balance.textContent);
 
-}
+  if (isNaN(add)) {
+    return
+  }
+  balance.textContent = add;
+  savaccount.style.backgroundColor = 'green';
+  }
+
 
 function withdraw() {
+  // debugger
   var minus = Number(balance.textContent) - (savings.value)
-  balance.textContent = minus
-}
+    balance.textContent = minus;
 
+  if (balance < 0) {
+    // account.style.backgroundColor = 'red';
+    alert('insufficient funds');
+  } else if (balance === 0) {
+    savaccount.style.backgroundColor = 'red';
+
+  }
+}
 withdrawbtn.addEventListener('click', withdraw);
 depositbtn.addEventListener('click', deposit);
 
-
-// function add() {
-// var result = Number(num1Input.value) + Number(num2Input.value)
-// span.textContent = result;
-//
-// }
-
-
-
+//CHECKING account
+var checkingbalance = document.querySelector('span.checkingbal');
+// var checking = document.querySelector('input.checking');
+var checking = document.querySelector('input.checking')
+var withdrawbtn = document.querySelector('#checkwithdrawbtn')
+var depositbtn = document.querySelector('#checkdepositbtn')
+var checkaccount = document.querySelector('#checkingcontainer')
 
 
+function checkDeposit() {
+  var checkAdd = Number(checking.value) + Number(checkingbal.textContent);
+
+  if (isNaN(checkAdd)) {
+    return
+  }
+  checkingbal.textContent = checkAdd;
+  // checkaccount.style.backgroundColor = 'green';
+  }
 
 
+function checkWithdraw() {
+  // debugger
+  var checkMinus = Number(checkingbal.textContent) - (checking.value)
+    checkingbal.textContent = checkMinus;
 
+  if (checkingbal < 0) {
+    checkaccount.style.backgroundColor = 'red';
+    alert('insufficient funds');
+  } else if (checkingbal === 0) {
+    checkaccount.style.backgroundColor = 'orange';
 
+  }
+}
 
-
-
-
-
-
-
-
-
+checkwithdrawbtn.addEventListener('click', checkWithdraw);
+checkdepositbtn.addEventListener('click', checkDeposit);
 
 
 
