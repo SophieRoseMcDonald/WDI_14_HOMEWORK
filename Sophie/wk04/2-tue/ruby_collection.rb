@@ -32,20 +32,18 @@ ninja_turtle = Hash.new
 # # Your answer here
 # Add a key age to ninja_turtle. Set it to whatever numerical value you'd like.
 #
-ninja_tutrtle[age:]
+ninja_turtle[:age] = 4
 # Remove the radical key-value pair from ninja_turtle.
 #
-# # Your answer here
+
 # Add a key pizza_toppings to ninja_turtle. Set it to an array of strings (e.g., ["cheese", "pepperoni", "peppers"]).
-#
-# # Your answer here
+ninja_turtle[:pizza_toppings] = 'cheese', 'pepperoni', 'peppers'
+
 # Access the first element of pizza_toppings.
-#
-# # Your answer here
+pizza_toppings.first
+
 # Produce an array containing all of ninja_turtle's keys using a method. The Ruby documentation might help.
-#
-# # Your answer here
+
 # Bonus
 # Print out each key-value pair in the following format - "KEY's is equal to VALUE" -- using a method. The Ruby documentation might help.
 #
-# # Your answer here
