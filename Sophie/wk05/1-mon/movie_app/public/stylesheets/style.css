@@ -1,0 +1,40 @@
+body {
+  background-color: darkgrey;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+}
+
+nav {
+  background-color: lightgrey;
+  font-size: 20px;
+  font-style: normal;
+
+  font-weight: bold;
+  color: white;
+  margin: 8px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  display: block;
+  margin: auto;
+
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+table {
+  text-align: justify;
+}
+
+th {
+  height: 50px;
+  text-align: center;
+}
