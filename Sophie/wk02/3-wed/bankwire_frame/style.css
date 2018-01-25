@@ -28,7 +28,7 @@ header h1 {
   flex-wrap: nowrap;
   width: 40%;
   text-align: center;
-  background-color: LightBlue;
+  background-color: lightgrey;
   border: 1px solid black;
   margin: 0 auto;
 }
@@ -40,7 +40,7 @@ header h1 {
   flex-wrap: nowrap;
   width: 40%;
   text-align: center;
-  background-color: yellow;
+  background-color: lightgrey;
   border: 1px solid black;
   margin: 0 auto;
   margin-top: 20px;
@@ -49,7 +49,7 @@ header h1 {
   flex-direction: column;
   text-align: center;
   width: 30%;
-  background-color: yellow;
+
   border: 1px solid black;*/
 }
 
@@ -80,7 +80,7 @@ button {
   flex-wrap: nowrap;
   width: 40%;
   text-align: center;
-  background-color: yellow;
+  background-color: lightgrey;
   border: 1px solid black;
   margin: 0 auto;
 }

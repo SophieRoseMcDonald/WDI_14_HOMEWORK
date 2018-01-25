@@ -46,4 +46,4 @@ pizza_toppings.first
 
 # Bonus
 # Print out each key-value pair in the following format - "KEY's is equal to VALUE" -- using a method. The Ruby documentation might help.
-#
+h.each{|key,val| puts "#{key} #{val}"}

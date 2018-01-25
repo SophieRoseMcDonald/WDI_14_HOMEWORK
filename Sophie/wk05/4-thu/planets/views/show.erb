@@ -1,0 +1,9 @@
+<h1>Dish Details</h1>
+
+<%= @planet['name']%>
+<img src="<%=@dplanet['image_url']%>" alt="">
+
+<form action="/planets/<%= @planet['id']%>/delete" method="post">
+  <button>Delete</button>
+
+</form>

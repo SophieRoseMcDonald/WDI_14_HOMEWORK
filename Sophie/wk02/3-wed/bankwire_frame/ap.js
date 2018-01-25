@@ -15,7 +15,7 @@ function deposit() {
     return
   }
   balance.textContent = add;
-  savaccount.style.backgroundColor = 'green';
+  savaccount.style.backgroundColor = 'lightgreen';
   }
 
 
@@ -25,10 +25,10 @@ function withdraw() {
     balance.textContent = minus;
 
   if (balance < 0) {
-    // account.style.backgroundColor = 'red';
     alert('insufficient funds');
   } else if (balance === 0) {
     savaccount.style.backgroundColor = 'red';
+    balance.textContent = 0;
 
   }
 }
@@ -51,7 +51,7 @@ function checkDeposit() {
     return
   }
   checkingbal.textContent = checkAdd;
-  // checkaccount.style.backgroundColor = 'green';
+  checkaccount.style.backgroundColor = 'lightgreen';
   }
 
 

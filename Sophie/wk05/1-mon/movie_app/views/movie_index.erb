@@ -1,0 +1,11 @@
+<div class="movie_listing">
+  <%@movie_index_data.each do |movie|%>
+    <a class="movie_title" href="/movie?movie=<%= movie['Title']%>">
+      <div class="movie_details">
+        <%=movie["Title"]%>
+        (<%=movie["Year"]%>)
+      <img src="<%=movie['Poster']%>" alt="">
+      </div>
+    </a>
+  <%end%>
+</div>
