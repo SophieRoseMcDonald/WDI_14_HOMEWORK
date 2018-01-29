@@ -1,0 +1,48 @@
+  .container {
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+
+  .wrapper {
+    width: 300px;
+    border: 3px solid black;
+    position: relative;
+  }
+  .wrapper span {
+    position: absolute; /* this span is in an absolute position base on the relative position of the div  */
+    right: 10px;   /* based on the entire view port, browser frame  */
+    top: 10px;    /* to move to bottom: 0 or right: 0, will move icon to bottom right.  */
+    font-size: 30px;
+   }
+
+
+  .project {
+    width: 50%;
+    float: left;
+  }
+
+  .project h2 {
+    display: none;
+  }
+
+  .project img {
+     display: block; /*space between images */
+  }
+
+/* if the width is greater than 400px default to @media */
+  @media (min-width: 600px) {
+    .project {
+      width: 33.33333%;
+    }
+    .porject h2 {
+      display: block;
+    }
+  }
+  @media (min-width: 1000px) {
+    .project {
+      width: 25%;
+    }
+  }
+label, input {
+  display: block;
+}

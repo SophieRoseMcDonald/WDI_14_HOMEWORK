@@ -1,0 +1,13 @@
+
+ <%= @dish.name %>
+<img src="<%= @dish.image_url %>" alt="foodimage" width="40%">
+
+<a href="/dishes/<%= @dish.id %>/edit">
+ <button>edit</button>
+</a>
+
+<%= @dishes.title%>
+  <form action ="/dishes/<%=@dish.id%>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="athenticity_token" value="<%=form_authenticity_token%>">
+    <button type="button" name="button"></button>

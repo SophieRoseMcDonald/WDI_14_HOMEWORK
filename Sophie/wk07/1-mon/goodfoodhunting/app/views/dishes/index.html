@@ -1,0 +1,7 @@
+<% @dishes.each do |dish| %>
+  <a href="/dishes/<%= dish.id %>">
+    <h1> <%= dish.name %></h1>
+    <h2> my id: <%= dish.id %> </h2>
+    <img src="<%=dish.image_url%>" alt="food image" width="30%">
+  </a>
+  <%end%>

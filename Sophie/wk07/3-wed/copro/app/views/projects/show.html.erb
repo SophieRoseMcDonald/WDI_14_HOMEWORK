@@ -1,0 +1,64 @@
+<div class="parentwrapper">
+  <div class="wrapper">
+    <h1><%=@project.title%></h1>
+    <img src="<%=@project.preview.url%>" alt="">
+    <span id="heart">&#10084;</span>
+    <%#= image_tag(@project.preview.url, :width => 600) if @project.preview.present? %>
+    </div>
+
+    <form action="/likes" method="post">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input type="hidden" name="project_id" value="<%=@project.id%>">
+      <span class='likecount'><%= @project.likes.count %></span>
+      <button>Likes</button>
+    </form>
+
+    <form action="/comments" method="post">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input type="hidden" name="project_id" value="<%= @project.id %>">
+      <textarea name="body"></textarea>
+      <button>post comment</button>
+    </form>
+</div>
+    <h3>Comments</h3>
+    <% @comments.each do |comment| %>
+      <div>
+        <strong><%= comment.user_name %></strong>
+        <br>
+        <p><%= comment.body %></p>
+      </div>
+    <% end %>
+<script>
+  var hearts = document.querySelector('heart');
+  heart.addEventListener('click', function(){
+    var card = event.target.closest('.parentwrapper');
+    this.style.color = "red";
+    var likeCount = card.querySelector('.likecount');
+   return false;
+    console.log('hearts hearts hearts')
+  })
+</script>
+
+
+<!-- <script type="text/javascript">
+  var stars = document.querySelectorAll('.star')
+
+  stars.forEach(function(star) {
+    star.addEventListener('click', function() {
+
+
+//event.target
+//starting from the target
+//searchup for ui-card
+var card = event.target.closest('.ui-card');
+//then search down for star-count
+var starCount = card.querySelector('.star-count');
+console.log(starCount)
+//set text content to existiing star-count + 1
+starCount.textContent = Number(starCount.textContent) + 1
+
+    console.log(event.target)
+
+    });
+  });
+</script> -->
