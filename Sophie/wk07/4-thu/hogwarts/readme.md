@@ -14,7 +14,7 @@ You're Rubyist Hagrid, a member of Dumbledore's Army. Correct all the errors so 
 
 ## Submission
 
-Fork and clone this repo. Once you have made the necessary corrections, push your changes and submit a pull request. 
+Clone this repo down to your homework folder. Then remove the inner .git folder. Once you have made the necessary corrections, commit and push your changes to the homework repo and make a pull request. 
 
 ## Bonus
 
