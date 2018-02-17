@@ -91,7 +91,11 @@ array = [1,2,3,4,5]
 [ 1, 2, 3, 4, 5 ]
 
 * Add an element to the front of an array.
+>array.unshift()
+
 * Remove an element from the front of an array.
+>array.shift()
+
 * Concatenates all the elements in an array into a string.
 [ 1, 2, 3, 4, 5 ]
 > array.join('')
@@ -112,9 +116,9 @@ What will the contents of the below arrays be after the code samples are execute
 
 ```js
 var numbers = [2, 4, 6, 8]
-numbers.pop()
-numbers.push(10)
-numbers.unshift(3)
+numbers.pop() [2,3,6]
+numbers.push(10) [2,4,6,10]
+numbers.unshift(3) [3,2,4,6,10]
 ```
 
 ```text
@@ -170,7 +174,7 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 | a | b | a AND b |
 | --- | --- | --- |
 | true | true | ? |
-| true | false | ? |
+| true | false | ?|
 | false | true | ? |
 | false | false | ? |
 
@@ -194,6 +198,27 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 |false|true|?|
 |false|false|?|
 
+ANSWER:
+a	b	a AND b
+true	true	// true
+true	false	// false
+false	true	// false
+false	false	// false
+a	b	a OR b
+true	true	// true
+true	false	// true
+false	true	// true
+false	false	// false
+a	b	a != b
+3	3	// false
+1	5	// true
+2	"2" // true
+a	b	!a AND (a OR b)
+true	true	// true
+true	false	// false
+false	true	// true
+false	false	 // true
+
 ## Conditionals
 
 You're a bouncer at a bar. Given an `age` variable, create a conditional that satisfies the following requirements...
@@ -204,6 +229,20 @@ You're a bouncer at a bar. Given an `age` variable, create a conditional that sa
 
 ```js
 // Your answer goes here.
+function age(patron){
+	if (patron > 75){
+		console.log("Are you sure you want to be here?");
+	}
+	else if (patron >= 18 && patron < 21){
+		console.log("Come on in (but no drinking)!");
+	}
+	else if (patron >= 21){
+		console.log("Come on in!");
+	}
+	else {
+		console.log("You're too young to be in here!");
+	}
+}
 ```
 
 #### Bonus
