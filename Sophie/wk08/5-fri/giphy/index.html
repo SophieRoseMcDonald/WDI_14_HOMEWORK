@@ -11,7 +11,7 @@
 <body>
   <input class='input' type="text" value="" placeholder="Enter word">
   <button class='button'>Submit</button>
-
+  <div class="container"></div>
 
   <script type="text/javascript">
     console.log('sanity check')
@@ -24,16 +24,18 @@
       }
       $('.container').children().remove();
       $.ajax(options).done(function(response) {
+        console.log(search)
+        console.log(response);
         response.data.forEach(function(gif) {
           var $container = $('.container')
           var $newgif = $('<img>').attr('src', gif.images.fixed_height.url)
           $container.append($newgif)
         });
 
-        console.log("response.search" + response.search);
-
       });
     });
+
+
     //   var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryangosling&api_key=VNLOHHPMgQ41Az63h8fPbh1CF2Ok9OUC&limit=10");
     // xhr.done(function(data) { console.log("success got data", data); });
     // "http://api.giphy.com/v1/gifs/search?q=" + $searched + "&apikey=VNLOHHPMgQ41Az63h8fPbh1CF2Ok9OUC&s=10",
