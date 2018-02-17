@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="style.css">
   <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
   </script>
 </head>
@@ -24,8 +25,8 @@
       }
       $('.container').children().remove();
       $.ajax(options).done(function(response) {
-        console.log(search)
-        console.log(response);
+        // console.log(search)
+        // console.log(response);
         response.data.forEach(function(gif) {
           var $container = $('.container')
           var $newgif = $('<img>').attr('src', gif.images.fixed_height.url)
@@ -34,6 +35,24 @@
 
       });
     });
+
+    +$(window).scroll(function() {
+  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    var search = $('input').val()
+    var options = {
+    url: 'http://api.giphy.com/v1/gifs/search?q=' + search + '&apikey=VNLOHHPMgQ41Az63h8fPbh1CF2Ok9OUC&limit=10&offset=' + counter * 10,
+    method: 'get' // default
+    };
+    counter++;
+    $.ajax(options).done(function(res){
+    res.data.forEach(function(gif){
+      var $container = $('.container')
+      var $newGif = $('<img>').attr('src', gif.images.fixed_height.url)
+      $container.append($newGif)
+      })
+    })
+  }
+});
 
 
     //   var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryangosling&api_key=VNLOHHPMgQ41Az63h8fPbh1CF2Ok9OUC&limit=10");
