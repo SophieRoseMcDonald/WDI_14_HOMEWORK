@@ -1,0 +1,11 @@
+<h1>Pokemon INdex</h1>
+<a href="/">Home</a>
+<a href="/pokemons/new">Add Pokemon</a>
+
+	<% @pokemons.each do |pokemon| %>
+	<div class="pokemon_wrapper">
+		<%= pokemon.species %>
+		<%= pokemon.nickname %>
+		<%= pokemon.level %>
+	</div>
+	<% end %>

@@ -1,0 +1,20 @@
+<a href="/">Home</a>
+
+<h1>Gotta chatch em all</h1>
+
+	<div class="new-pokemon-form-container">
+		<form class="new-pokemon-form" action="" method="">
+			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+			<input class="pokemon-id-hidden" type="hidden" name="pokemon_id">
+			<label class="nickname-label" for="">Nickname</label>
+			<input class="nickname-input" type="text" name="nickname">
+			<label class="level-label" for="">Level</label>
+			<input class="level-input" type="text" name="level">
+			<label class="species-label" for="">species</label>
+			<input class="species-input" type="text" name="species">
+			<label class="img-url-label" for="">URL Image</label>
+			<input class="url-input" type="text" name="url">
+
+			<button>Catch!</button>
+		</form>
+		

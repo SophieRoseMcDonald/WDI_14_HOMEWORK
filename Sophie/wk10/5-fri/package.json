@@ -1,0 +1,12 @@
+{
+  "name": "5-fri",
+  "version": "1.0.0",
+  "description": "Node Weather CLI request is a nodejs library for making http requests. Read the documentation to learn how it works.",
+  "main": "nodeWeatherCLI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
